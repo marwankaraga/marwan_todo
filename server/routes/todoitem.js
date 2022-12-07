@@ -26,7 +26,7 @@ router.get('/api/items',async (req,res)=>{
 
     }
     catch(err){
-        res.json(err);
+        res.json(err)
 
     }
 })
