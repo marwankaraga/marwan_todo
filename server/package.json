@@ -4,6 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "node backend/index.js",
+    "backend": "nodemon backend/index.js",
+    "frontend":"npm start --prefix client",
     "test": "nodemon index.js"
   },
   "keywords": [],
