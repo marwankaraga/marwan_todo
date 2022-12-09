@@ -24,7 +24,7 @@ const todoItemRoute=require('./routes/todoitem');
 
 const db=require('../server/x').mongoURI
  mongooose.connect(db)
- .then(()=>console.log("data connect"))
+ .then(()=>console.log("data connected"))
  .catch(err =>console.log(err));
  
 app.use('/',todoItemRoute)
@@ -32,4 +32,4 @@ app.use('/',todoItemRoute)
 
 
 
-app.listen(PORT,()=>console.log("run"));
+app.listen(PORT,()=>console.log("running"));
