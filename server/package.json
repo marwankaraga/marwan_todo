@@ -8,8 +8,8 @@
     "server": "nodemon server/index.js",
     "client":"npm start --prefix client ",
     "clientinstall":"npm install --prefix client",
-    "dev":"cocurrently \"npm run server\" \"npm run client\"",
-    "render-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "both":"cocurrently \"npm run server\" \"npm run client\""
+    
     
   },
   "keywords": [],
