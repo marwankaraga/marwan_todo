@@ -14,6 +14,11 @@ app.use(cors({
     origin :["http://localhost:3000","http://mern-task-app.onrender.com"]
 }));    
 
+if(process.env.NODE_ENV === 'production'){
+    app.use(express.static(client/build));
+    app.get('*',(req,res) =>res.sendFile(path.resolve(__dirname,'client','build','index.html')));
+}
+
 const todoItemRoute=require('./routes/todoitem');
 
 
