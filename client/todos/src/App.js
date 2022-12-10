@@ -16,7 +16,7 @@ function App() {
     e.preventDefault();
     try {
      
-      const res = await axios.post("http://localhost:5500/api/item", { item: itemText,numb:number})
+      const res = await axios.post("https://mern-app-stacks-api/api/item", { item: itemText,numb:number})
       console.log(res);
     }
     catch (err) {
@@ -27,7 +27,7 @@ function App() {
   useEffect(() => {
     const getItem = async () => {
       try {
-        const res = await axios.get('http://localhost:5500/api/items')
+        const res = await axios.get('http://mern-app-stacks-api/api/items')
         setListItem(res.data);
       } catch (err) {
      console.log(err);
