@@ -1,4 +1,4 @@
 const allowedOrigins=[
-    'https://mern-app-stack.com'
+    'https://mern-app-stacks.com'
 ]
 module.exports=allowedOrigins
