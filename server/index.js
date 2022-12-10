@@ -13,7 +13,7 @@ app.use(express.json());
 const PORT=process.env.PORT ||5500 ;
 
 app.use(cors(corsOptions));    
-app.use('/',express.static(path.join(__dirname,"public")))
+
 
 
 const todoItemRoute=require('./routes/todoitem');
