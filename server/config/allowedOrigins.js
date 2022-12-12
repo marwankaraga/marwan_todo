@@ -1,4 +1,4 @@
 const allowedOrigins=[
-    'https://mern-app-stacks.com'
+    'http://localhost:5500'
 ]
 module.exports=allowedOrigins
